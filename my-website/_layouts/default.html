@@ -4,17 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} - {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 </head>
 <body>
   <div class="container">
     <div class="left-column">
-      {% include header.html %}
-      {% include nav.html %}
+      <header>
+        {% include header.html %}
+      </header>
+      <nav>
+        {% include nav.html %}
+      </nav>
     </div>
     <div class="right-column">
-      {{ content }}
+      <main>
+        {{ content }}
+      </main>
     </div>
   </div>
+  <!-- Link to the JavaScript file -->
+  <script src="{{ '/assets/js/navigation.js' | relative_url }}"></script>
 </body>
 </html>

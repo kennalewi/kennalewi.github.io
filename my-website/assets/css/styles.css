@@ -1,59 +1,195 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
     margin: 0;
     padding: 0;
-  }
-  
-  .container {
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
     display: flex;
-  }
-  
-  .left-column {
-    width: 20%;
-    background-color: #f4f4f4;
+}
+
+/* Left Column */
+.left-column {
+    width: 250px;
+    background-color: #f7f7f7;
     padding: 20px;
-  }
-  
-  .right-column {
-    width: 80%;
+    border-right: 1px solid #ddd;
+}
+
+/* Right Column */
+.right-column {
+    flex: 1;
     padding: 20px;
+}
+
+/* Header */
+header {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Style the header link */
+header h1 a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color of the header */
+    font-weight: inherit; /* Inherit the font weight of the header */
   }
   
-  header {
-    text-align: center;
+  /* Optional: Add any additional styles to make it look better */
+  header h1 a:hover {
+    text-decoration: underline; /* Add underline on hover, if desired */
   }
-  
-  nav ul {
-    list-style-type: none;
+
+/* Navigation */
+nav ul {
+    list-style: none;
     padding: 0;
-  }
-  
-  nav ul li {
-    margin: 10px 0;
-  }
-  
-  nav ul li ul {
+}
+
+nav ul li {
+    margin-bottom: 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 400;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+    color: #444;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+p {
+    margin: 0 0 20px 0;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Lists */
+ul,
+ol {
+    margin: 0 0 0px 0px;
+    padding: 0;
+}
+
+ul li,
+ol li {
+    margin-bottom: 0px;
+}
+
+/* Hide sub-menu by default */
+.sub-menu {
+    display: none;
     margin-left: 20px;
-  }
-  
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .card {
-    width: 30%;
-    margin: 10px;
+    /* Optional: Indent nested items */
+}
+
+/* Show sub-menu when parent is active */
+.nav-item.active .sub-menu {
+    display: block;
+}
+
+/* Optional: Style for nav items with children */
+.nav-item.has-children>a {
+    cursor: pointer;
+    position: relative;
+}
+
+/* Optional: Add an indicator for items with children */
+.nav-item.has-children > a::after {
+    content: "⮞";
+    display: inline-block;
+    margin-left: 5px; /* Adjust spacing as needed */
+    transform: ;
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+}
+
+.nav-item.has-children.active > a::after {
+    transform: rotate(.25turn); /* Flip the arrow */
+}
+
+/* Blockquotes */
+blockquote {
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    background: #f7f7f7;
+    border-left: 5px solid #ddd;
+    font-style: italic;
+    color: #555;
+}
+
+/* Code */
+code {
+    background: #f4f4f4;
+    padding: 2px 4px;
+    font-size: 0.9em;
+}
+
+pre {
+    background: #f4f4f4;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  .home-content {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .project-content {
-    margin-top: 20px;
-  }
+    overflow-x: auto;
+}
+
+/* Footer */
+.site-footer {
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+    color: #777;
+    text-align: center;
+    font-size: 0.9em;
+}

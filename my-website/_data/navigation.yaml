@@ -1,7 +1,5 @@
-- name: Home
-  url: /
 - name: Projects
-  url: /projects/
+  url: /
   children:
     - name: Project 1
       url: /projects/project-1/
