@@ -36,15 +36,19 @@ header {
 
 /* Style the header link */
 header h1 a {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit the color of the header */
-    font-weight: inherit; /* Inherit the font weight of the header */
-  }
-  
-  /* Optional: Add any additional styles to make it look better */
-  header h1 a:hover {
-    text-decoration: underline; /* Add underline on hover, if desired */
-  }
+    text-decoration: none;
+    /* Remove underline */
+    color: inherit;
+    /* Inherit the color of the header */
+    font-weight: inherit;
+    /* Inherit the font weight of the header */
+}
+
+/* Optional: Add any additional styles to make it look better */
+header h1 a:hover {
+    text-decoration: underline;
+    /* Add underline on hover, if desired */
+}
 
 /* Navigation */
 nav ul {
@@ -149,17 +153,19 @@ ol li {
 }
 
 /* Optional: Add an indicator for items with children */
-.nav-item.has-children > a::after {
+.nav-item.has-children>a::after {
     content: "⮞";
     display: inline-block;
-    margin-left: 5px; /* Adjust spacing as needed */
+    margin-left: 5px;
+    /* Adjust spacing as needed */
     transform: ;
     transform: rotate(0deg);
     transition: transform 0.3s;
 }
 
-.nav-item.has-children.active > a::after {
-    transform: rotate(.25turn); /* Flip the arrow */
+.nav-item.has-children.active>a::after {
+    transform: rotate(.25turn);
+    /* Flip the arrow */
 }
 
 /* Blockquotes */
@@ -192,4 +198,22 @@ pre {
     color: #777;
     text-align: center;
     font-size: 0.9em;
+}
+
+/* Card */
+.card {
+    background-color: red;
+}
+
+.card-content {
+    background-color: orangered;
+}
+
+/* Project */
+.project {
+    background-color: blue;
+}
+
+.project-content {
+    background-color: blueviolet;
 }
