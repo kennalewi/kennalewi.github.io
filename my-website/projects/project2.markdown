@@ -3,6 +3,7 @@ layout: project
 title: "Project 2"
 homepage: false
 materials: "materials here"
+permalink: projects/project2
 ---
 
 ![Alt text for the image](/projects/images/CloudVideo1.png)
