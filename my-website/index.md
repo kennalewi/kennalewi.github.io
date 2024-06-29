@@ -4,11 +4,12 @@ title: Home
 ---
 
 <div class="cards">
-  {% for project in site.pages %}
+    {% assign baseurl = site.baseurl %}
+    {% for project in site.pages %}
     {% if project.layout == "project" %}
-      <div class="card">
-        {% include projectcard.html project=project %}
-      </div>
+    <div class="card">
+        {% include_relative _layouts/projectcard.html project=project baseurl=baseurl %}
+    </div>
     {% endif %}
-  {% endfor %}
+    {% endfor %}
 </div>

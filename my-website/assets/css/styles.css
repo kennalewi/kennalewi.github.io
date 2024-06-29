@@ -1,35 +1,53 @@
 /* General Styles */
+html,
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: #333;
-    background-color: #fff;
+    height: 100%;
     margin: 0;
     padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
     line-height: 1.6;
+    font-weight: 300; /* Helvetica Light */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Container */
 .container {
     display: flex;
+    height: 100vh; /* Ensure the container takes the full viewport height */
+    width: 100%; /* Ensure the container takes the full viewport width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 /* Left Column */
 .left-column {
-    width: 250px;
-    background-color: #f7f7f7;
+    background-color: #fff;
     padding: 20px;
-    border-right: 1px solid #ddd;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 /* Right Column */
 .right-column {
-    flex: 1;
+    margin-left: 25%; /* Offset by the width of the fixed left column */
+    width: 75%;
     padding: 20px;
+    overflow-y: auto;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 /* Header */
 header {
-    font-size: 1.5em;
     margin-bottom: 20px;
     color: #444;
 }
@@ -63,7 +81,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #444;
-    font-weight: 400;
+    font-weight: 300; /* Helvetica Light */
 }
 
 nav ul li a:hover {
@@ -77,39 +95,34 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 300;
     color: #444;
     margin: 0 0 20px 0;
     line-height: 1.2;
+    font-weight: 300; /* Helvetica Light */
 }
 
 h1 {
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.2em;
+    font-weight: 500; /* Helvetica Medium */
 }
 
 h2 {
-    font-size: 2em;
-}
-
-h3 {
-    font-size: 1.75em;
-}
-
-h4 {
-    font-size: 1.5em;
-}
-
-h5 {
-    font-size: 1.25em;
-}
-
-h6 {
     font-size: 1em;
+    font-weight: 500; /* Helvetica Medium */
+    color: #464646;
+}
+
+h3, h4, h5, h6 {
+    font-size: 1em;
+    font-style: italic;
+    color: #464646;
 }
 
 p {
     margin: 0 0 20px 0;
+    font-size: 1em;
+    line-height: 1.2;
+    font-weight: 300; /* Helvetica Light */
 }
 
 /* Links */
@@ -154,18 +167,29 @@ ol li {
 
 /* Optional: Add an indicator for items with children */
 .nav-item.has-children>a::after {
-    content: "⮞";
+    content: "»";
+    /* Closed state */
     display: inline-block;
     margin-left: 5px;
     /* Adjust spacing as needed */
-    transform: ;
     transform: rotate(0deg);
     transition: transform 0.3s;
 }
 
 .nav-item.has-children.active>a::after {
     transform: rotate(.25turn);
+    /* Open state */
     /* Flip the arrow */
+}
+
+/* Prevent initial animation */
+.no-animation .nav-item.has-children>a::after {
+    transition: none;
+}
+
+/* Restore transition after initial load */
+body:not(.no-animation) .nav-item.has-children>a::after {
+    transition: transform 0.3s ease;
 }
 
 /* Blockquotes */
@@ -200,20 +224,59 @@ pre {
     font-size: 0.9em;
 }
 
-/* Card */
+/* Card Styles */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Adjust the gap between cards */
+}
+
 .card {
-    background-color: red;
+    margin-bottom: 0px;
 }
 
 .card-content {
-    background-color: orangered;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
-/* Project */
+.card-content a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.card-content a:hover {
+    text-decoration: underline;
+}
+
+.card-content .read-more {
+    display: block;
+    margin-top: auto; /* Push the read more link to the bottom */
+    text-align: right;
+}
+
+.card-images p img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0px;
+}
+
+/* Project Styles */
 .project {
-    background-color: blue;
+    margin-bottom: 0px;
 }
 
-.project-content {
-    background-color: blueviolet;
+.project-content p {
+    margin-bottom: 0px;
+}
+
+.project-images p img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
 }

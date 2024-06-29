@@ -3,9 +3,16 @@ layout: default
 ---
 
 <article class="project">
-  <h1>{{ page.title }}</h1>
-  <div class="project-content">
-    <p>THIS IS A PROJECT</p>
-    {{ content }}
+  <div class="project-images">
+    {{ content | split:"<!--more-->" | first }}
+  </div>
+  <div>
+    <h2>{{ page.title }}</h2>
+    <div>
+      <h3>{{ page.materials }}</h3>
+    </div>
+    <div>
+      <p>{{ content | split:"<!--more-->" | last }}</p>
+    </div>
   </div>
 </article>

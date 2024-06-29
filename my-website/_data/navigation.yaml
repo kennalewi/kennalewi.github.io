@@ -1,9 +1,9 @@
-- name: Projects
+- name: Works
   url: /
   children:
     - name: Project 1
-      url: /projects/project-1/
+      url: /projects/project1/
     - name: Project 2
-      url: /projects/project-2/
+      url: /projects/project2/
 - name: About
   url: /about/
