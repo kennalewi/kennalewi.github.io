@@ -1,0 +1,282 @@
+/* General Styles */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+    font-weight: 300; /* Helvetica Light */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container */
+.container {
+    display: flex;
+    height: 100vh; /* Ensure the container takes the full viewport height */
+    width: 100%; /* Ensure the container takes the full viewport width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Left Column */
+.left-column {
+    background-color: #fff;
+    padding: 20px;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* Right Column */
+.right-column {
+    margin-left: 25%; /* Offset by the width of the fixed left column */
+    width: 75%;
+    padding: 20px;
+    overflow-y: auto;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Style the header link */
+header h1 a {
+    text-decoration: none;
+    /* Remove underline */
+    color: inherit;
+    /* Inherit the color of the header */
+    font-weight: inherit;
+    /* Inherit the font weight of the header */
+}
+
+/* Optional: Add any additional styles to make it look better */
+header h1 a:hover {
+    text-decoration: underline;
+    /* Add underline on hover, if desired */
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 300; /* Helvetica Light */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #444;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+    font-weight: 300; /* Helvetica Light */
+}
+
+h1 {
+    font-size: 1.2em;
+    font-weight: 500; /* Helvetica Medium */
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: 500; /* Helvetica Medium */
+    color: #464646;
+}
+
+h3, h4, h5, h6 {
+    font-size: 1em;
+    font-style: italic;
+    color: #464646;
+}
+
+p {
+    margin: 0 0 20px 0;
+    font-size: 1em;
+    line-height: 1.2;
+    font-weight: 300; /* Helvetica Light */
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Lists */
+ul,
+ol {
+    margin: 0 0 0px 0px;
+    padding: 0;
+}
+
+ul li,
+ol li {
+    margin-bottom: 0px;
+}
+
+/* Hide sub-menu by default */
+.sub-menu {
+    display: none;
+    margin-left: 20px;
+    /* Optional: Indent nested items */
+}
+
+/* Show sub-menu when parent is active */
+.nav-item.active .sub-menu {
+    display: block;
+}
+
+/* Optional: Style for nav items with children */
+.nav-item.has-children>a {
+    cursor: pointer;
+    position: relative;
+}
+
+/* Optional: Add an indicator for items with children */
+.nav-item.has-children>a::after {
+    content: "»";
+    /* Closed state */
+    display: inline-block;
+    margin-left: 5px;
+    /* Adjust spacing as needed */
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+}
+
+.nav-item.has-children.active>a::after {
+    transform: rotate(.25turn);
+    /* Open state */
+    /* Flip the arrow */
+}
+
+/* Prevent initial animation */
+.no-animation .nav-item.has-children>a::after {
+    transition: none;
+}
+
+/* Restore transition after initial load */
+body:not(.no-animation) .nav-item.has-children>a::after {
+    transition: transform 0.3s ease;
+}
+
+/* Blockquotes */
+blockquote {
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    background: #f7f7f7;
+    border-left: 5px solid #ddd;
+    font-style: italic;
+    color: #555;
+}
+
+/* Code */
+code {
+    background: #f4f4f4;
+    padding: 2px 4px;
+    font-size: 0.9em;
+}
+
+pre {
+    background: #f4f4f4;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+/* Footer */
+.site-footer {
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+    color: #777;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Card Styles */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Adjust the gap between cards */
+}
+
+.card {
+    margin-bottom: 0px;
+}
+
+.card-content {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-content a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.card-content a:hover {
+    text-decoration: underline;
+}
+
+.card-content .read-more {
+    display: block;
+    margin-top: auto; /* Push the read more link to the bottom */
+    text-align: right;
+}
+
+.card-images p img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0px;
+}
+
+/* Project Styles */
+.project {
+    margin-bottom: 0px;
+}
+
+.project-content p {
+    margin-bottom: 0px;
+}
+
+.project-images p img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
