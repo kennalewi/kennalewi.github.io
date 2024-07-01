@@ -1,9 +1,9 @@
 ---
 layout: project
 title: "The Matter (2020)"
-homepage: false
+homepage: true
 materials: "Performance through WebEx, Documented as Video"
-permalink: /projects/empty
+permalink: /projects/thematter
 ---
 
 ![Alt text for the image](/projects/images/TheMatter1.png)

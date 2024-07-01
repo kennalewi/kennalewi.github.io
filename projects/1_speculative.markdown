@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Speculative"
-homepage: false
+homepage: true
 materials: ""
 permalink: /projects/speculative
 ---
