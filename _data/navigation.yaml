@@ -2,7 +2,7 @@
   url: /
   children:
     - name: Speculative (2024)
-    url: /projects/speculative
+      url: /projects/speculative
     - name: Cloud Essay (2024)
       url: /projects/thecloudessay
     - name: The Matter (2020)
