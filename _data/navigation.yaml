@@ -2,6 +2,6 @@
   url: /
   children:
     - name: Cloud Essay (2024)
-      url: /projects/thecloudessay/
+      url: /projects/thecloudessay
 - name: About
-  url: /about/
+  url: /about
