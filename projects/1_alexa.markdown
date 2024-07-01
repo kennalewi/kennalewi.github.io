@@ -6,6 +6,8 @@ materials: "Lyrics and Song generated using Suno.AI trained on data from Google 
 permalink: /projects/alexa
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/f6q56E3Ra20?si=jML3ZSeqXby3Tnvn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/f6q56E3Ra20?rel=0&controls=0&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <!--more-->
 

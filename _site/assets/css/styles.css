@@ -8,7 +8,8 @@ body {
     color: #333;
     background-color: #fff;
     line-height: 1.6;
-    font-weight: 300; /* Helvetica Light */
+    font-weight: 300;
+    /* Helvetica Light */
 }
 
 body {
@@ -19,9 +20,12 @@ body {
 /* Container */
 .container {
     display: flex;
-    height: 100vh; /* Ensure the container takes the full viewport height */
-    width: 100%; /* Ensure the container takes the full viewport width */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    height: 100vh;
+    /* Ensure the container takes the full viewport height */
+    width: 100%;
+    /* Ensure the container takes the full viewport width */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
 }
 
 /* Left Column */
@@ -38,7 +42,8 @@ body {
 
 /* Right Column */
 .right-column {
-    margin-left: 25%; /* Offset by the width of the fixed left column */
+    margin-left: 25%;
+    /* Offset by the width of the fixed left column */
     width: 75%;
     padding: 20px;
     overflow-y: auto;
@@ -81,7 +86,8 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #444;
-    font-weight: 300; /* Helvetica Light */
+    font-weight: 300;
+    /* Helvetica Light */
 }
 
 nav ul li a:hover {
@@ -98,21 +104,27 @@ h6 {
     color: #444;
     margin: 0 0 20px 0;
     line-height: 1.2;
-    font-weight: 300; /* Helvetica Light */
+    font-weight: 300;
+    /* Helvetica Light */
 }
 
 h1 {
     font-size: 1.2em;
-    font-weight: 500; /* Helvetica Medium */
+    font-weight: 500;
+    /* Helvetica Medium */
 }
 
 h2 {
     font-size: 1em;
-    font-weight: 500; /* Helvetica Medium */
+    font-weight: 500;
+    /* Helvetica Medium */
     color: #464646;
 }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
     font-size: 1em;
     font-style: italic;
     color: #464646;
@@ -122,7 +134,8 @@ p {
     margin: 0 0 20px 0;
     font-size: 1em;
     line-height: 1.2;
-    font-weight: 300; /* Helvetica Light */
+    font-weight: 300;
+    /* Helvetica Light */
 }
 
 /* Links */
@@ -229,11 +242,12 @@ pre {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px; /* Adjust the gap between cards */
+    gap: 30px;
+    /* Adjust the gap between cards */
 }
 
 .card {
-    margin-bottom: 0px;
+    margin-bottom: 20px;
 }
 
 .card-content {
@@ -254,7 +268,8 @@ pre {
 
 .card-content .read-more {
     display: block;
-    margin-top: auto; /* Push the read more link to the bottom */
+    margin-top: auto;
+    /* Push the read more link to the bottom */
     text-align: right;
 }
 
@@ -280,3 +295,68 @@ pre {
     display: block;
     margin-bottom: 10px;
 }
+
+/* Video Container Styles */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin-bottom: 20px; /* Match the margin-bottom of project-images */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Carousel Styles */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px; /* Match the margin-bottom of project-images */
+  }
+  
+  .carousel-inner {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%;
+    width: 100%;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .carousel-control.prev {
+    left: 10px;
+  }
+  
+  .carousel-control.next {
+    right: 10px;
+  }
