@@ -1,9 +1,7 @@
 - name: Works
   url: /
   children:
-    - name: The Cloud
-      url: /projects/thecloud/
-    - name: Project 2
-      url: /projects/project2/
+    - name: Cloud Essay (2024)
+      url: /projects/thecloudessay/
 - name: About
   url: /about/

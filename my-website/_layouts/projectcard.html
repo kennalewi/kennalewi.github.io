@@ -5,7 +5,7 @@
   <div class="card-content">
     <h2>{{ project.title }}</h2>
     <h3>{{ project.materials }}</h3>
-    <p>{{ project.content | split:"<!--more-->" | last | truncatewords: 50 | markdownify }}</p>
+    <body>{{ project.content | split:"<!--more-->" | last | truncatewords: 50 | markdownify }}</body>
     <div class="read-more">
       <a href="{{ project.url }}" class="read-more">More &raquo;</a>
     </div>
