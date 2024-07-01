@@ -1,9 +1,15 @@
 - name: Works
   url: /
   children:
+    - name: Speculative (2024)
+    url: /projects/speculative
     - name: Cloud Essay (2024)
       url: /projects/thecloudessay
+    - name: The Matter (2020)
+      url: /projects/thematter
+    - name: A Moment of Our Time (2020)
+      url: /projects/amomentofourtime
 - name: About
   url: /about
 - name: CV
-  url: https://docs.google.com/document/d/YOUR_DOC_ID
+  url: https://docs.google.com/document/d/1Hz3NVwG38V32lhux7nOSHJu5RFVkuvYjTMAudxF0bck/edit?usp=drive_link
