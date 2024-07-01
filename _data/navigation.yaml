@@ -1,14 +1,16 @@
 - name: Works
   url: /
   children:
-    - name: Speculative (2024)
-      url: /projects/speculative
+    - name: Songs from Amazon Alexa (2024)
+      url: /projects/alexa
     - name: Cloud Essay (2024)
       url: /projects/thecloudessay
     - name: The Matter (2020)
       url: /projects/thematter
     - name: A Moment of Our Time (2020)
       url: /projects/amomentofourtime
+    - name: Fifth Third Arena Vault Activation (2020)
+      url: /projects/mural
 - name: About
   url: /about
 - name: CV
