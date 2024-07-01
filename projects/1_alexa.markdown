@@ -2,7 +2,7 @@
 layout: project
 title: "Songs from Amazon Alexa (2024)"
 homepage: true
-materials: "Lyrics and Song generated using Suno.AI trained on data from Google News results of "Data collection by smart devices", Images generated through Midjourney using ChatGPT, partially processed in Adobe Photoshop."
+materials: "Lyrics and Song generated using Suno.AI trained on data from Google News results of 'Data collection by smart devices'. Images generated through MidJourney using ChatGPT, partially processed in Adobe Photoshop."
 permalink: /projects/alexa
 ---
 
