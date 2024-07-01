@@ -8,7 +8,7 @@
     const next = carousel.querySelector('.carousel-control.next');
     const prev = carousel.querySelector('.carousel-control.prev');
 
-    if (!inner || !items.length || !next || !prev) return;
+    if (!inner || items.length === 0 || !next || !prev) return;
 
     let currentIndex = 0;
 
@@ -25,5 +25,7 @@
       currentIndex = (currentIndex - 1 + items.length) % items.length;
       updateCarousel();
     });
+
+    updateCarousel(); // Initialize carousel position
   });
 </script>
