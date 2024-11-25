@@ -3,7 +3,7 @@ email: mckennalewis2019gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Kenna Lewis' Portfolio
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://kennalewis.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: minima
@@ -14,6 +14,7 @@ plugins:
   - jekyll-feed
 include:
   - assets
+  - projects
 
 markdown: kramdown
 kramdown:
