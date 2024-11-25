@@ -4,7 +4,7 @@ layout: default
 
 <article class="project">
   <div class="project-images">
-    {{ content | split:"<!--more-->" | first }}
+    {{ content | markdownify | split:"<!--more-->" | first }}
   </div>
   <div>
     <h2>{{ page.title }}</h2>
@@ -12,7 +12,7 @@ layout: default
       <h3>{{ page.materials }}</h3>
     </div>
     <div>
-      <body>{{ content | split:"<!--more-->" | last }}</body>
+      {{ content | markdownify | split:"<!--more-->" | last }}
     </div>
   </div>
 </article>

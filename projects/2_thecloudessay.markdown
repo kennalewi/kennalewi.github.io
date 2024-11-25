@@ -7,4 +7,7 @@ permalink: /projects/thecloudessay
 ---
 
 ![Alt text for the image](/projects/images/CloudVideo1.png)
+
 <!--more-->
+
+&nbsp;
